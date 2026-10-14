@@ -22,9 +22,16 @@ for u in data:
         continue
     print(uid, name, email)
 ' Tony<code>
-it will output a UniqueID and the User Name
+
+
+it will output a UniqueID and the User Name:
+
 <code>5839f8d0-109e-41c6-b52b-f2657efdf289 Tony Chavez <code>
+
+
 Then paste these commands with the uniqueID into the UOSServer
+
+
 <code>
 curl -sS -X PUT    http://127.0.0.1:9080/api/v2/user/UNIQUE_ID/deactivate
 curl -sS -X DELETE http://127.0.0.1:9080/api/v2/user/UNIQUE_ID
